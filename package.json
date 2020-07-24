@@ -1,0 +1,25 @@
+{
+  "name": "openapi-enforcer-bigint",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha test"
+  },
+  "peerDependencies": {
+    "openapi-enforcer": "^1.0.0"
+  },
+  "keywords": [
+    "openapi-enforcer",
+    "bigint",
+    "format",
+    "type"
+  ],
+  "author": "",
+  "license": "Apache-2.0",
+  "devDependencies": {
+    "chai": "^4.2.0",
+    "mocha": "^8.0.1",
+    "openapi-enforcer": "^1.10.6"
+  }
+}

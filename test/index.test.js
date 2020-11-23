@@ -1,5 +1,6 @@
 const expect = require('chai').expect
 const Enforcer = require('openapi-enforcer')
+const path = require('path')
 
 require('../index')
 
@@ -117,6 +118,12 @@ describe('bigint', () => {
       expect(schema.validate(1n)).to.equal(undefined)
       console.log(schema.validate(0n).toString())
       expect(schema.validate(0n)).to.match(/Value must be above the minimum/)
+    })
+  })
+
+  describe('OpenAPI doc', () => {
+    it('can load OpenAPI doc', async () => {
+      await Enforcer(path.resolve(__dirname, 'openapi.yml'))
     })
   })
 
